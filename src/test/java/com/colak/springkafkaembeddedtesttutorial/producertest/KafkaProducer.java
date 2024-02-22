@@ -15,11 +15,15 @@ public class KafkaProducer {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    public void send(String topic, String payload) {
+    public boolean send(String topic, String payload) {
         log.info("sending payload='{}' to topic='{}'", payload, topic);
 
-        kafkaTemplate.send(topic, payload);
-
+        boolean result = true;
+        try {
+            kafkaTemplate.send(topic, payload).get();
+        } catch (Exception exception) {
+            result = false;
+        }
+        return result;
     }
-
 }
