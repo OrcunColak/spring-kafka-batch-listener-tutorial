@@ -14,7 +14,7 @@ import java.util.List;
 @Slf4j
 public class KafkaConsumer {
 
-    @KafkaListener(topics = "topic1", batch = "true")
+    @KafkaListener(topics = "topic1", groupId = "group1", batch = "true")
     public void receive(List<ConsumerRecord<String, String>> consumerRecords) {
         log.info("List size : {}", consumerRecords.size());
 

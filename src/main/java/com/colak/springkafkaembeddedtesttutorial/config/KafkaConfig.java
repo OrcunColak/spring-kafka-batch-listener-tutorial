@@ -22,7 +22,7 @@ public class KafkaConfig {
         propsMap.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         propsMap.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
 
-        propsMap.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
+
         propsMap.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
 
         propsMap.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
