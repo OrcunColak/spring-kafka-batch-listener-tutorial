@@ -1,4 +1,4 @@
-package com.colak.springkafkaembeddedtesttutorial.config;
+package com.colak.springtutorial.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;

@@ -1,4 +1,4 @@
-package com.colak.springkafkaembeddedtesttutorial.producertest;
+package com.colak.springtutorial.producertest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

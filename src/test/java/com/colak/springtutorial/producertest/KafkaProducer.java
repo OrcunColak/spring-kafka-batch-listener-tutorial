@@ -1,4 +1,4 @@
-package com.colak.springkafkaembeddedtesttutorial.producertest;
+package com.colak.springtutorial.producertest;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
